@@ -1,0 +1,1 @@
+console.log(new URL('http://localhost:8080/user/12345').pathname.split('/'))

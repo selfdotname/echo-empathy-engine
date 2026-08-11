@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/pusher-js@8.6.0/dist/web/pusher.min.js"></script>
+        <title>Echo - The Empathy Engine</title>
+    </head>
+    <body>
+        <div>Table link: <span class="table-link"><%= tableLink %></span> <button class="copy-btn">Copy</button></div>
+        <ul class="narrators-list">
+            <% for (const narrator of narrators) { %>
+                <li><%= narrator %></li>
+            <% } %>
+        </ul>
+        Mood: <span class="mood">None</span> <span class="mood-color"></span>
+        <ul class="story">
+            
+        </ul>
+        <form class="sentence-form">
+            <input type="text" placeholder="Enter sentence" name="sentence">
+            <input type="hidden" name="link" value="<%= tableLink %>">
+            <button>End</button>
+        </form>
+        <script src="/table.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.story-list {
+    max-height: 225px;
+    overflow: auto;
+}
+.mood-color {
+    width: 12px;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    display: inline-block;
+}
